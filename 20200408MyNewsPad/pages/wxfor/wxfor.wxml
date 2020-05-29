@@ -1,0 +1,6 @@
+<!--pages/wxfor/wxfor.wxml-->
+<view wx:for="{{users}}" wx:key="id">
+<checkbox><text>{{item.userName}}--{{index}}</text></checkbox>
+</view>
+<button bindtap="addUltraman">添加</button>
+

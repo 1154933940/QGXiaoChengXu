@@ -1,0 +1,11 @@
+<!--pages/test2/test2.wxml-->
+<view>{{msg}}</view>
+<rich-text nodes="{{msg}}"></rich-text>
+<button bindtap="changeMsg">超级变变变</button>
+
+<button bindtap="toast">吐司</button>
+
+<navigator url="/pages/test/test?id=1">跳转</navigator>
+<button bindtap="jumpTo">跳转</button>
+
+<button bindtap="getdata">获取数据</button>

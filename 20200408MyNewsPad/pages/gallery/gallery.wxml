@@ -1,0 +1,32 @@
+<view class="top">
+
+    <image class="userinfo-avatar" src="/resource/images/tuku/39.png" mode="cover"></image>
+    <view class="top1">云在晴天水在瓶</view> 
+
+</view>
+
+<view class="top">
+
+    <image class="userinfo-avatar" src="/resource/images/tuku/40.png" mode="cover"></image>
+    <view class="top1">清明时节雨纷纷</view> 
+
+</view>
+
+<view class="top">
+
+    <image class="userinfo-avatar" src="/resource/images/tuku/41.png" mode="cover"></image>
+    <view class="top1">路上行人欲断魂</view> 
+
+</view>
+
+
+<view class="top">
+
+    <image class="userinfo-avatar" src="/resource/images/tuku/42.png" mode="cover"></image>
+    <view class="top1">借问酒家何处有</view> 
+</view>
+<view class="top">
+
+    <image class="userinfo-avatar" src="/resource/images/tuku/43.png" mode="cover"></image>
+    <view class="top1">牧童遥指杏花村</view> 
+</view>

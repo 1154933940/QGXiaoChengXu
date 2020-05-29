@@ -1,0 +1,68 @@
+/* pages/newsList/newsList.wxss */
+.head{
+  height: 50px;
+  background-color: red;
+  overflow: hidden;
+  /* padding-top:10px;
+  box-sizing: border-box; */
+
+}
+.head input{
+  height: 30px;
+  margin-top: 10px;
+  background-color: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+}
+.type-pad{
+  height: 40px;
+    line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.type-pad  text{
+  margin-left: 30px;
+ font-size: 14px;
+}
+.type-pad  text.selected{
+  color:red;
+}
+.body{
+  background-color: #ccc;
+}
+.body .news-pad{
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 6px;
+}
+.body .news-pad .user-pad image{
+  height: 30px;
+  width: 30px;
+ border-radius: 30px;
+ vertical-align: middle;
+}
+.body .news-pad .user-pad  text{
+  font-size: 14px;
+  margin-left: 15px;
+}
+.body .news-pad .user-pad  text.no-focused{
+color:red;
+}
+.body .news-pad .user-pad  text:last-child{
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+.body .news-pad .news-title
+{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.body .news-pad .news-content video{
+  height: 200px;
+  margin-top: 10px;
+}
+.body .news-pad .news-content image{
+   margin-top: 10px;
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+<!--pages/newsList/newsList.wxml-->
+<view class="head">
+  <input placeholder="请输入搜索内容" placeholder-style="padding-left:10px; font-size:12px"></input>
+</view>
+<view class="type-pad">
+  <text wx:for="{{topBars}}" class="{{selectBar==item.id?'selected':''}}"  wx:key="id" bindtap="clickType" data-id="{{item.id}}">{{item.name}}</text>
+</view>
+<view class="body">
+  <view class="news-pad" wx:for="{{newsList}}" wx:key="id">
+    <view class="user-pad">
+      <image src="{{item.headUrl}}"></image>
+      <text>{{item.userName}}</text>
+      <text class="no-focused" wx:if="{{item.isFocus}}">关注</text>
+      <text wx:else>已关注</text>
+    </view>
+    <block wx:if="{{item.isVideo}}">
+      <view class="news-title">
+        {{item.newsTitle}}
+      </view>
+    </block>
+    <block wx:else>
+      <view class="news-title">
+        {{item.newsAbstrack}}
+      </view>
+    </block>
+    <view class="news-content">
+      <block wx:if="{{item.isVideo}}">
+        <video objectFit="fill" src="{{item.videoUrl}}"></video>
+      </block>
+      <block  wx:elif="{{item.imageUrls !=null}}">
+        <image  mode="widthFix" src="../../resource/images/NewsImages/news1.jpg"></image>
+      </block>
+    </view>
+  </view>
+</view>

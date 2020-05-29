@@ -1,0 +1,21 @@
+<!-- <view class="pad10" wx:for="{{twoList}}" wx:key="id">
+  <view>
+    {{index+1}}、{{item.name}}
+  </view>
+  <view wx:for="{{item.twodata}}" wx:for-item="twodata" wx:key="id">
+    ----{{twodata.name}}---{{item.name}}
+  </view>
+</view> -->
+<view>
+  <!--轮播图-->
+  <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+    <swiper-item wx:for="{{homeList.SYSOpenPicList}}" wx:for-item="CouponList" wx:key="id">
+      <image class='swiper-img' src='https://jh.fangcuanhuo99.com/{{CouponList.ImgUrl}}'></image>
+    </swiper-item>
+  </swiper>
+
+<view class='content' wx:for="{{homeList.GoodsList}}" wx:key="id">
+<image style=' width: 100%;' src='https://jh.fangcuanhuo99.com/{{item.Main_img}}'></image>
+<view class="viewtest">{{item.GoodsName}}</view>
+</view>
+</view>

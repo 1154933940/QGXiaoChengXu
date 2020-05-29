@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class='top' style=''>
+<view class="containers">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+</view>
+<image class="contenimg"  src="/resource/images/Icons/shangping_banner.png" mode="cover"></image>
+<view class="bottoms">
+
+<view class="bottomss" bindtap="daysig">
+<a>每日签到<span><image src="/resource/images/Icons/icon8.png" mode="cover"></image></span></a>
+</view>
+<view class="bottomss" bindtap="tukuji">
+<a>图库集<span><image src="/resource/images/Icons/icon8.png" mode="cover"></image></span></a>
+</view>
+<view class="bottomss" bindtap="qrcodes">
+<a>二维码识别器<span><image src="/resource/images/Icons/icon8.png" mode="cover"></image></span></a>
+</view>
+<view class="bottomss" bindtap="jump">
+<a>联系作者<span><image src="/resource/images/Icons/icon8.png" mode="cover"></image></span></a>
+</view>
+<!-- <view class="bottomss" bindtap="daysig">
+<a>我的地址<span><image src="/resource/images/Icons/icon8.png" mode="cover"></image></span></a>
+</view> -->
+<!-- <view class="bottomss" open-type="contact" bindcontact="contact">
+
+<a>联系客服<span><image src="/resource/images/Icons/icon8.png" mode="cover"></image></span></a>
+</view> -->
+<button open-type="contact" bindcontact="contact" style="">联系客服</button>
+</view>

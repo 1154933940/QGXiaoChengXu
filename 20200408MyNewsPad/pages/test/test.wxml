@@ -1,0 +1,71 @@
+<!--pages/test/test.wxml-->
+<!-- <view>这是view</view>
+<view>这是view</view>
+<view>这是view</view>
+<view>这是view</view> -->
+
+<!-- <text selectable>这是text &nbsp;</text> -->
+<!-- <text decode>这是text &nbsp;这是text</text>
+
+<text decode>这是text &ensp;这是text</text>
+
+<text decode>这是text &emsp;这是text</text> -->
+
+<!-- <text decode>&lt; &gt;</text>
+
+<text decode>&amp; &apos;</text> -->
+
+<!-- <text space="nbsp">你好                   世界</text> -->
+<!-- <text space="ensp">你好       世界</text>
+<text space="emsp">你好       世界</text> -->
+
+<!-- <block>这是block</block> -->
+<!-- <checkbox-group>
+  <checkbox>女</checkbox>
+  <checkbox>男</checkbox>
+</checkbox-group>
+
+<radio-group>
+  <radio>女</radio>
+  <radio>男</radio>
+</radio-group> -->
+
+<!-- <input type="text" placeholder="请输入密码" placeholder-style="color:red" placeholder-class="textstyle"></input> -->
+<input type="number"></input>
+<input type="idcard"></input>
+<input type="digit"></input>
+
+<button>这是按钮</button>
+<button type="primary">这是按钮</button>
+<button type="default">这是按钮</button>
+<button type="warn">这是按钮</button>
+
+<form bindsubmit="" bindreset="">
+  <button form-type="submit">这是按钮</button>
+  <button form-type="reset">这是按钮</button>
+</form>
+
+<button bindtap="clickMe">点击我</button>
+<button bindlongtap="longClickMe">长长的点击我</button>
+
+<input bindinput="changeInput"></input>
+<input bindblur="loseFocus" bindfocus="getFocus"></input>
+
+<button size="default" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取用户电话号码</button>
+
+<button open-type="contact" bindcontact="contact">联系客服</button>
+
+
+
+<button bindtap="clickMe" data-number1="1" data-number2="2">传参</button>
+
+<view data-param="a" bindtap="viewA">
+  <view data-param="b">
+    <view data-param="c">
+      我是要被点击的view标签
+    </view>
+  </view>
+</view>
+

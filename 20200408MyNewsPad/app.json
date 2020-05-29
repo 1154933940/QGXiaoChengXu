@@ -1,0 +1,46 @@
+{
+  "pages": [
+   "pages/qrcode/qrcode",
+    "pages/gallery/gallery",
+    "pages/home/home",
+    "pages/newsList/newsList",
+    "pages/wxfor/wxfor",
+    "pages/test2/test2",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青瓜",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#f10b2e",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/home/img/tab_home.png",
+        "selectedIconPath": "pages/home/img/tab_home_hove.png"
+      },
+      {
+        "pagePath": "pages/qrcode/qrcode",
+        "text": "二维码识别",
+        "iconPath": "pages/home/img/tab_fenlei.png",
+        "selectedIconPath": "pages/home/img/tab_fenlei_hove.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "pages/home/img/tab_mine.png",
+        "selectedIconPath": "pages/home/img/tab_mine_hove.png"
+      }
+    ]
+  }
+}
